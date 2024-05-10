@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model Applications {
+  id            String    @unique @id
+  createdAt     DateTime  @default(now())
+  company       String
+  positionName  String
+  positionUrl   String    @unique
+  appliedStatus Boolean   @default(false)
+  replyStatus   Boolean   @default(false)
+  replyType     Reply     @default(NONE) 
+  interviewType Interview @default(NONE) 
+  appliedDate   DateTime  
+  replyDate     DateTime
+  test          Json
+  
+}
+
+enum Reply {
+  NONE
+  DECLINE
+  INTERVIEW
+}
+
+enum Interview {
+  NONE
+  INPERSON
+  PHONE
+  VIDEOCALL
+}
