@@ -12,26 +12,26 @@ import {
   } from "@/components/ui/drawer"
 
   
-const ImportDrawer = () => {
+const InputDrawer = () => {
 
     return (
         <>
             <Drawer>
-                <DrawerTrigger>Open</DrawerTrigger>
+                <DrawerTrigger asChild>
+                    <Button variant="outline">New Job</Button>
+                </DrawerTrigger>
                 <DrawerContent>
-                    <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-                        <DrawerDescription>This action cannot be undone.</DrawerDescription>
-                    </DrawerHeader>
-                    <ApplicationEntry />
-                    <DrawerFooter>
-                        <Button>Submit</Button>
-                        <DrawerClose>
-                            <Button variant="outline">Cancel</Button>
-                        </DrawerClose>
-                    </DrawerFooter>
+                    <div className="container mx-auto max-w-md my-10">
+                        <DrawerHeader>
+                            <DrawerTitle>Job Application Input</DrawerTitle>
+                            <DrawerDescription>Enter New Job Posting</DrawerDescription>
+                        </DrawerHeader>
+                            <ApplicationEntry />
+                    </div>
                 </DrawerContent>
             </Drawer>
         </>
     )
 }
+
+export default InputDrawer;

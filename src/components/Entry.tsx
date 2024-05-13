@@ -40,7 +40,7 @@ const ApplicationEntry = () => {
                         control={form.control}
                         name='company'
                         render={({field, fieldState, formState}) => (
-                            <FormItem>
+                            <FormItem className="mb-2">
                                 <FormLabel>
                                     Company Name
                                 </FormLabel>
@@ -50,7 +50,40 @@ const ApplicationEntry = () => {
                             </FormItem>
                         )}
                     />
-                    <Button type="submit">Submit</Button>
+                    <FormField
+                        control={form.control}
+                        name='position'
+                        render={({field, fieldState, formState}) => (
+                            <FormItem className="mb-2">
+                                <FormLabel>
+                                    Position
+                                </FormLabel>
+                                <FormControl>
+                                    <Input placeholder="position" {...field}></Input>
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
+                    <FormField
+                        control={form.control}
+                        name='url'
+                        render={({field, fieldState, formState}) => (
+                            <FormItem className="mb-2">
+                                <FormLabel>
+                                    Job Posting Link 
+                                </FormLabel>
+                                <FormControl>
+                                    <Input placeholder="position url" {...field}></Input>
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
+                    <Button 
+                        type="submit"
+                        className="place-content-center flex mx-auto w-28"
+                    >
+                        Submit
+                    </Button>
                 </form>
             </Form>
         </>
