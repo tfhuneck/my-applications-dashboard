@@ -15,7 +15,7 @@ datasource db {
 }
 
 model Applications {
-  id            String    @unique @id
+  id            String    @unique @id @default(cuid())
   createdAt     DateTime  @default(now())
   company       String
   positionName  String
@@ -24,10 +24,8 @@ model Applications {
   replyStatus   Boolean   @default(false)
   replyType     Reply     @default(NONE) 
   interviewType Interview @default(NONE) 
-  appliedDate   DateTime  
-  replyDate     DateTime
-  test          Json
-  
+  appliedDate   DateTime?  
+  replyDate     DateTime?  
 }
 
 enum Reply {

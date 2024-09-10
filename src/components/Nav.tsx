@@ -71,14 +71,12 @@ const Nav = () => {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href={'/'}>
-                     
-                    </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <Link href={'/'}>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>Home</NavigationMenuLink>
-                    </Link>
+                  <NavigationMenuLink 
+                    href={'/'}
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    Home
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
