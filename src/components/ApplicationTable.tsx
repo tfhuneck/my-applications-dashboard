@@ -1,6 +1,7 @@
 'use client'
 
 import * as React from "react"
+import { Application } from "@/lib/types"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { format } from "date-fns"
@@ -53,79 +54,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export type Application = {
-  company: string,
-  position: string,
-  url: string,
-  applied: boolean,
-  reply: boolean,
-  replyType: '' | 'interview' | 'declined',
-  applyDate: Date,
-  replyDate?: Date | undefined,
-}
-
-export const sampleData: Application[] = [
-  {
-    company: 'Fountain',
-    position: 'Software Engineer - Front End (E5)',
-    url: 'https://boards.greenhouse.io/swishanalytics/jobs/4405991005?gh_src=5e6aaedf5us',
-    applied: true,
-    reply: false,
-    replyType: '',
-    applyDate: new Date(2024, 4, 24),
-    replyDate: undefined,
-  },
-  {
-    company: 'Swish',
-    position: 'Front End Engineer',
-    url: 'https://boards.greenhouse.io/fountain/jobs/4345210006',
-    applied: true,
-    reply: false,
-    replyType: '',
-    applyDate: new Date(2024, 4, 24),
-    replyDate: undefined,
-  },
-  {
-    company: 'Fountain',
-    position: 'Software Engineer - Front End (E5)',
-    url: 'https://boards.greenhouse.io/swishanalytics/jobs/4405991005?gh_src=5e6aaedf5us',
-    applied: true,
-    reply: false,
-    replyType: '',
-    applyDate: new Date(2024, 4, 24),
-    replyDate: undefined,
-  },
-  {
-    company: 'Swish',
-    position: 'Front End Engineer',
-    url: 'https://boards.greenhouse.io/fountain/jobs/4345210006',
-    applied: true,
-    reply: false,
-    replyType: '',
-    applyDate: new Date(2024, 4, 24),
-    replyDate: undefined,
-  },
-  {
-    company: 'Fountain',
-    position: 'Software Engineer - Front End (E5)',
-    url: 'https://boards.greenhouse.io/swishanalytics/jobs/4405991005?gh_src=5e6aaedf5us',
-    applied: true,
-    reply: false,
-    replyType: '',
-    applyDate: new Date(2024, 4, 24),
-    replyDate: undefined,
-  },
-  {
-    company: 'Swish',
-    position: 'Front End Engineer',
-    url: 'https://boards.greenhouse.io/fountain/jobs/4345210006',
-    applied: true,
-    reply: false,
-    replyType: '',
-    applyDate: new Date(2024, 4, 24),
-    replyDate: undefined,
-  },
-]
 
 export const columns : ColumnDef<Application>[]= [
   {
@@ -144,42 +72,42 @@ export const columns : ColumnDef<Application>[]= [
     cell: ({ row }) => (<div className="capitalize">{row.getValue("company")}</div>),
   },
   {
-    accessorKey: "position",
+    accessorKey: "positionName",
     header: "Position Name",
-    cell: ({ row }) => (<div className="capitalize min-w-fit">{row.getValue("position")}</div>),
+    cell: ({ row }) => (<div className="capitalize min-w-fit">{row.getValue("positionName")}</div>),
   },
   {
-    accessorKey: "url",
-    header: "Position url",
+    accessorKey: "positionUrl",
+    header: "Position Url",
     cell: ({ row }) => {
         return (
           <Button
             variant='link'
           >
-            <a href={row.getValue("url")}>
-              View Position
+            <a href={row.getValue("positionUrl")}>
+              View Posting
             </a>
           </Button>
         )
     },
   },
   {
-    accessorKey: "applied",
-    header: "Applied",
+    accessorKey: "appliedStatus",
+    header: "appliedStatus",
     cell: ({ row }) => (
         <Checkbox
-        //   checked={(e) => {row.setApplied(e)}}
+        //   checked={(e) => {row.setappliedStatus(e)}}
         //   onCheckedChange={(value) => (!value)}
           aria-label="Select row"
         />
       ),
   },
   {
-    accessorKey: "reply",
+    accessorKey: "replyStatus",
     header: "Reply",
     cell: ({ row }) => (
         <Checkbox
-        //   checked={(e) => {row.setApplied(e)}}
+        //   checked={(e) => {row.setappliedStatus(e)}}
         //   onCheckedChange={(value) => (!value)}
           aria-label="Select row"
         />

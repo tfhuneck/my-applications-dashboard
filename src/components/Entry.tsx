@@ -1,5 +1,6 @@
 'use client'
 
+import axios from 'axios'
 import { Input } from "@/components/ui/input"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm, SubmitHandler } from "react-hook-form"
@@ -24,7 +25,6 @@ const applicationSchema = z.object({
     // reply: z.boolean(),
     // replyType: z.enum(["none", "interview", "decline"]),
     // interviewType: z.enum(["none", "inperson", "phone", "vidoecall"]),
-
 })
 
 const ApplicationEntry = () => {
@@ -34,10 +34,13 @@ const ApplicationEntry = () => {
     }) // TypeScript-first schema validation with static type inference
     
     const onSubmit: SubmitHandler<Object> = async (data) => {
-        const res = await fetch('http://localhost:3000/entry', {
-            method: 'POST', 
-            body: JSON.stringify(data)
+        axios.post('api/entry',{
+            data
+        }, {
+            headers: {}
         })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
     }
 
     return (
