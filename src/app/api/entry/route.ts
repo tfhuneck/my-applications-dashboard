@@ -6,7 +6,7 @@ export async function POST(req: Request, res: Response) {
     const inputs = await req.json()
     // console.log(inputs)
     const{company,position,url} = inputs.data
-    const entry = await prisma.applications.create({
+    const entry = await prisma.postings.create({
         data:{
             company: company,
             positionName: position,

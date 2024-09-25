@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { z } from "zod"
 import { Button } from "@/components/ui/button"
+import Details from './Details'
 import {
   Form,
   FormControl,
@@ -17,7 +18,7 @@ import {
 } from "@/components/ui/form"
 
 // define form schema 
-const applicationSchema = z.object({
+const postingSchema = z.object({
     company: z.string().min(1, { message: 'Must enter a company name'}),
     position: z.string().min(1, { message: 'Must enter name of the position'}),
     url: z.string().url({ message: "Invalid url" }),
@@ -27,10 +28,10 @@ const applicationSchema = z.object({
     // interviewType: z.enum(["none", "inperson", "phone", "vidoecall"]),
 })
 
-const ApplicationEntry = () => {
+const PostingEntry = () => {
   
-    const form = useForm<z.infer<typeof applicationSchema>>({
-        resolver: zodResolver(applicationSchema)
+    const form = useForm<z.infer<typeof postingSchema>>({
+        resolver: zodResolver(postingSchema)
     }) // TypeScript-first schema validation with static type inference
     
     const onSubmit: SubmitHandler<Object> = async (data) => {
@@ -101,4 +102,4 @@ const ApplicationEntry = () => {
     )
 }
 
-export default ApplicationEntry;
+export default PostingEntry;

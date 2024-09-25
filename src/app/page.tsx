@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ApplicationTable from "@/components/ApplicationTable";
-import { Application } from "@/lib/types";
+import { Posting } from "@/lib/types";
 import InputDrawer from "@/components/InputDrawer";
 import {columns} from "@/components/ApplicationTable";
 import { getApplicationData } from "./api/fetch/appdata/route";

@@ -1,0 +1,187 @@
+[
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "A World-Changing Company"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "Palantir builds the world’s leading software for data-driven decisions and operations. By bringing the right data to the people who need it, our platforms empower our partners to develop lifesaving drugs, forecast supply chain disruptions, locate missing children, and more."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "The Role"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "Software Engineers at Palantir build software at scale to transform how organizations around the world use data. In this role, you’ll have an opportunity to grow more quickly than you ever envisioned as you contribute high-quality code directly to Palantir Gotham, Palantir Apollo, or Palantir Foundry: products that are deployed at some of the most important institutions across the public and private sectors. You'll create features used by research scientists, aerospace engineers, intelligence analysts, and economic forecasters in countries around the world. Palantir's Product Development organization is made up of small teams of Software Engineers, each focusing on a specific aspect of a product. For example, you might join a team that builds a Foundry front-end application, or a component of the Gotham release infrastructure. We encourage communication and collaboration among teams to share context, skills, and experience, so you'll also have the opportunity to learn about other business areas."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Core Responsibilities"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "As a Software Engineer, you are involved throughout the product lifecycle - from idea generation, design, and prototyping, to execution and shipping, all while also being paired with a mentor dedicated to your growth and success. You'll collaborate closely with technical and non-technical counterparts to understand our customers' problems and build products that tackle them. One of the most effective ways to understand what our users need is to meet them. You may receive an opportunity to tour the assembly line at an auto-manufacturer or join a counter-terror analyst at their desk to really understand their mission and difficulties."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "SWE principles include:"}
+        ]
+    },
+    {
+        "type": "BULLETS",
+        "elements" : [
+            {"content" : "Ownership: We see projects through from beginning to end in spite of obstacles we may encounter."},
+            {"content" : "Collaboration: We work internally with people from a variety of backgrounds — such as other Software Engineers, Product Managers, Designers and Product Reliability Engineers. We also partner with our business development teams (Forward Deployed Engineers, Deployment Strategists) in order to understand and solve our customers' problems."},
+            {"content" : "Trust: We trust each other to effectively handle time and priorities, and don't micromanage. We want people to have the space to think for themselves, while feeling supported by their team."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Technologies We Use"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "It doesn’t matter what languages you know when you join us; what matters is that you can write clean, effective code and learn new languages quickly. Our software is constantly evolving, so we need engineers who can do the same. Alongside peers that bring diverse experience - whether you’re a former university Teaching Assistant, switched to computer science recently, or are a hackathon enthusiast — you'll build your skills to apply the best technology to solve a given problem. Right now, we use:"}
+        ]
+    },
+    {
+        "type": "BULLETS",
+        "elements" : [
+            {"content" : "A variety of languages, including Java and Go for backend and Typescript for frontend"},
+            {"content" : "Open-source technologies like Cassandra, Spark, Elasticsearch, React, and Redux"},
+            {"content" : "Industry-standard build tooling, including Gradle, Webpack, and GitHub"}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "What We Value"}
+        ]
+    },
+    {
+        "type": "BULLETS",
+        "elements" : [
+            {"content" : "Ability to communicate and collaborate with a variety of individuals, including engineers, users and non-technical team members."},
+            {"content" : "Willingness to learn and make decisions independently, and the ability to ask questions effectively."},
+            {"content" : "Active US Security clearance, or eligibility and willingness to obtain a US Security clearance."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "What We Require"}
+        ]
+    },
+    {
+        "type": "BULLETS",
+        "elements" : [
+            {"content" : "Engineering background in fields such as Computer Science, Mathematics, Software Engineering, and Physics."},
+            {"content" : "Familiarity with data structures, storage systems, cloud infrastructure, front-end frameworks, and other technical tools."},
+            {"content" : "Experience coding in programming languages, such as Java, C++, Python, JavaScript, or similar languages."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "To apply, please submit the following:"}
+        ]
+    },
+    {
+        "type": "BULLETS",
+        "elements" : [
+            {"content" : "An updated resume / CV - please do so in PDF format."},
+            {"content" : "Thoughtful responses to our application questions."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Salary"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "The estimated salary range for this position is estimated to be $135,000 - $145,000/year. Total compensation for this position may also include Restricted Stock units, sign-on bonus and other potential future incentives. Further note that total compensation for this position will be determined by each individual’s relevant qualifications, work experience, skills, and other factors. This estimate excludes the value of any potential sign-on bonus; the value of any benefits offered; and the potential future value of any long-term incentives."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Offer Deadline"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "In an effort to build more transparency into our recruitment process, we’d like to share our offer deadline expectations. By applying to this position, you commit to confirming your decision within two weeks of receiving your written offer."},
+            {"content" : "Our benefits aim to promote health and wellbeing across all areas of Palantirians’ lives. We work to continuously improve our offerings and listen to our community as we design and update them. The list below details our available benefits and some of the perks that can be enjoyed as an employee of Palantir Technologies."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Benefits"}
+        ]
+    },
+    {
+        "type": "BULLETS",
+        "elements" : [
+            {"content" : "Employees (and their eligible dependents) can enroll in medical, dental, and vision insurance as well as voluntary life insurance"},
+            {"content" : "Employees are automatically covered by Palantir’s basic life, AD&D and disability insurance"},
+            {"content" : "Commuter benefits"},
+            {"content" : "Relocation assistance"},
+            {"content" : "Take what you need paid time off, not accrual based"},
+            {"content" : "10 paid holidays throughout the calendar year"},
+            {"content" : "Supportive leave of absence program including time off for military service and medical events"},
+            {"content" : "Paid leave for new parents and subsidized back-up care for all parents"},
+            {"content" : "Fertility and family building benefits including but not limited to adoption, surrogacy, and preservation"},
+            {"content" : "Stipend to help with expenses that come with a new child"},
+            {"content" : "Employees can enroll in Palantir’s 401k plan"}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Application deadline"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "We accept applications on an ongoing basis."}
+        ]
+    },
+    {
+        "type": "HEADING",
+        "elements" : [
+            {"content" : "Life at Palantir"}
+        ]
+    },
+    {
+        "type": "BODY",
+        "elements" : [
+            {"content" : "We want every Palantirian to achieve their best outcomes, that’s why we celebrate individuals’ strengths, skills, and interests, from your first interview to your longterm growth, rather than rely on traditional career ladders. Paying attention to the needs of our community enables us to optimize our opportunities to grow and helps ensure many pathways to success at Palantir. Promoting health and well-being across all areas of Palantirians’ lives is just one of the ways we’re investing in our community. Learn more at Life at Palantir and note that our offerings may vary by region."},
+            {"content" : "In keeping consistent with Palantir’s values and culture, we believe employees are “better together” and in-person work affords the opportunity for more creative outcomes. Therefore, we encourage employees to work from our offices to foster connectivity and innovation. Many teams do offer hybrid options (WFH a day or two a week), allowing our employees to strike the right trade-off for their personal productivity. Based on business need, there are a few roles that allow for “Remote” work on an exceptional basis. If you are applying for one of these roles, you must work from the state in which you are employed. If the posting is specified as Onsite, you are required to work from an office."},
+            {"content" : "Palantir is committed to promoting a culture of diversity, equity, and inclusion and is proud to be an Equal Employment Opportunity and Affirmative Action employer. We believe that all Palantirians share the responsibility of upholding our commitment to these values and encourage candidates from a wide range of backgrounds, perspectives, and lived experiences to join us in solving the world’s hardest problems. Palantir does not discriminate based upon race, religion, color, national origin, gender (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. Palantir is committed to working with and providing reasonable accommodations to qualified individuals with physical and mental disabilities. Please see the United States Department of Labor’s EEO poster, EEO poster supplement and Pay Transparency Notice for additional information."},
+            {"content" : "Palantir is committed to making the job application process accessible to everyone. If you are living with a disability (visible or not visible) and need to request a reasonable accommodation for any part of the application or hiring process, please reach out and let us know how we can help."}
+        ]
+    }
+]

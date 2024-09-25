@@ -1,7 +1,6 @@
 'use client'
 
 import * as React from "react"
-import { Application } from "@/lib/types"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { format } from "date-fns"
@@ -10,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Calendar } from "@/components/ui/calendar"
+import Details  from "./Details"
 import {
   Popover,
   PopoverContent,
@@ -55,7 +55,7 @@ import {
 } from "@/components/ui/select";
 
 
-export const columns : ColumnDef<Application>[]= [
+export const columns : ColumnDef<Posting>[]= [
   {
     accessorKey: "company",
     header: ({column}) => {
@@ -74,7 +74,14 @@ export const columns : ColumnDef<Application>[]= [
   {
     accessorKey: "positionName",
     header: "Position Name",
-    cell: ({ row }) => (<div className="capitalize min-w-fit">{row.getValue("positionName")}</div>),
+    cell: ({ row }) => {
+      return (
+        <Details 
+          company= {row.getValue("company")}
+          title = {row.getValue("positionName")}
+        />
+      )
+    },
   },
   {
     accessorKey: "positionUrl",
@@ -85,7 +92,7 @@ export const columns : ColumnDef<Application>[]= [
             variant='link'
           >
             <a href={row.getValue("positionUrl")}>
-              View Posting
+              Apply
             </a>
           </Button>
         )
